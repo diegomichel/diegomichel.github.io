@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <title>Clase para acceder Mysql desde PHP5</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/tether.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-faded">
+      <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header">
+        &#9776;
+      </button>
+      <div class="collapse navbar-toggleable-xs" id="navbar-header">
+        <a class="navbar-brand navbar-invenrt" href="http://diegomichel.org/">
+          <i class="fa fa-home fa-2x"></i>
+        </a>
+        <div class="form-inline pull-xs-right">
+          <a class="btn btn-default" href="http://github.com/diegomichel">
+            <i class="fa fa-github fa-2x"></i>
+          </a>
+        </div>
+      </div>
+    </nav> 
+    <div class="container">
+    
+<h1>Clase para acceder Mysql desde PHP5</h1>
+    <h2>Mon, Nov8, 2010</h2>
+    <p>Como ya existe mysqli(Mysql Improved) en php5 que es orientado a objetos lo unico que tenemos que hacer es extender la clase para convertirla en Singleton, para asi asegurarnos que solo exista una sola conneccion al servidor Mysql en todo momento. Database.php [php]&lt;?php class Database extends mysqli { private static $databaseConnection = NULL; public static function getInstance() { if (!self::$databaseConnection) { self::createInstance(); } return self::$databaseConnection; } function __construct() { @parent::__construct(&lsquo;localhost&rsquo;, &lsquo;root&rsquo;, &lsquo;1&rsquo;, &lsquo;blog&rsquo;); if (mysqli_connect_errno()) { throw new Exception( mysqli_connect_error(), mysqli_connect_errno() ); } } private static function createInstance() { $class = __CLASS__; self::$databaseConnection = new $class; } } ?&gt;[/php] Recuerda que tienes que reemplazar los valores USUARIO_MYSQL, PASSWORD_MYSQL y NOMBRE_DE_LA_BASE_DE_DATOS por los de tu servidor web. Luego para usarla solo tienes que incluir el archivo Database.php donde quieras. por Ejemplo:. [php] &lt;?php include &ldquo;Database.php&rdquo;; $db = Database::getInstance(); $result = $db-&gt;query(&ldquo;select * from users&rdquo;); $allUsers = $result-&gt;fetch_all(); $result-&gt;close(); &hellip; ?&gt; [/php]<strong>$db = Database::getInstance();</strong> Nos devuelve la coneccion a la base de datos y si no existe la crea.<strong>$result = $db-&gt;query(&ldquo;select * from users&rdquo;);</strong> Ejecuta una consulta SQL y guarda el objeto <a href="http://mx.php.net/manual/en/class.mysqli-result.php">Mysqli_Result</a> en $result<strong>$allUsers = $result-&gt;fetch_all();</strong> fetch_all() devuelve un array con todos los resultados de la consulta SQL.<strong>$result-&gt;close();</strong> Libera la memoria usada por el objeto $result, se debe ejecutar siempre que el objeto result no sera usado. Puedes checar la referencia de funciones de <a href="http://mx.php.net/manual/en/class.mysqli.php">mysqli</a> para mas funciones muy utiles como <a href="http://mx.php.net/manual/en/mysqli-result.fetch-object.php">fetch_object</a>. Rapido y simple.</p>
+
+    <div>
+      
+        <a class='previous' href='http://diegomichel.org/old_blog_posts/154-como-montar-una-particion-reiserfs-en-freebsd/'> Como montar una particion reiserfs en freebsd.</a>
+      |
+      
+      
+        <a class='previous' href='http://diegomichel.org/old_blog_posts/152-disponible-la-version-3-de-wordpress/'> Disponible la version 3 de wordpress.</a>
+      
+    </div>
+    <p><a href="http://diegomichel.org/">Home</a></p>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="/js/tether.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+</body>
+</html>
+

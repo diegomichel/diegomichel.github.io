@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Diego Michel Rubio Ramirez Software Engineer</title>
+    <link>http://diegomichel.org/post/</link>
+    <description>Recent content in Posts on Diego Michel Rubio Ramirez Software Engineer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-MX</language>
+    <lastBuildDate>Thu, 12 Nov 2015 22:20:32 -0600</lastBuildDate>
+    <atom:link href="http://diegomichel.org/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Updated to goHugo</title>
+      <link>http://diegomichel.org/post/updatetohugo/</link>
+      <pubDate>Thu, 12 Nov 2015 22:20:32 -0600</pubDate>
+      
+      <guid>http://diegomichel.org/post/updatetohugo/</guid>
+      <description>&lt;p&gt;I dont update this blog as much as i would like, and it was using wordpress with mysql, which seems to be a waste of resources, so i will give a go to &lt;a href=&#34;http://gohugo.io&#34;&gt;gohugo.io&lt;/a&gt; which was recommended to me by &lt;a href=&#34;http://emberigniter.com&#34;&gt;Frank from EmberIgniter&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;GoHugo is website platform that works by generating the html files and then you can publish them. There is not admin section like in wordpress, that means you can/have to do everything from the CLI, generate the content and upload it to your server.&lt;/p&gt;
+
+&lt;p&gt;So how it&amp;rsquo;s my setup&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Hugo and markdown files hosted with &lt;a href=&#34;http://bitbucket.org&#34;&gt;BitBucket&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;A copy on my personal laptop where i update and do push either to bitbucket or my server&lt;/li&gt;
+&lt;li&gt;Server running &lt;a href=&#34;http://nginx.org&#34;&gt;nginx&lt;/a&gt;, considered G-Wan but it didn&amp;rsquo;t run and then i read alot of reviews saying that it was insecure.&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

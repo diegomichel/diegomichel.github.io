@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <title>Me &#39;hackearon&#39; un blog.</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/tether.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-faded">
+      <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header">
+        &#9776;
+      </button>
+      <div class="collapse navbar-toggleable-xs" id="navbar-header">
+        <a class="navbar-brand navbar-invenrt" href="http://diegomichel.org/">
+          <i class="fa fa-home fa-2x"></i>
+        </a>
+        <div class="form-inline pull-xs-right">
+          <a class="btn btn-default" href="http://github.com/diegomichel">
+            <i class="fa fa-github fa-2x"></i>
+          </a>
+        </div>
+      </div>
+    </nav> 
+    <div class="container">
+    
+<h1>Me &#39;hackearon&#39; un blog.</h1>
+    <h2>Sun, Nov18, 2007</h2>
+    <p>&nbsp;</p>
+
+<p>Pues eso que me han hackeado el blog de <a href="http://versosdeamor.info">versos de amor</a> (aprovecho el link para que google mire que ya la arregle xD), lo que han hecho es aprovecharse de una vulnerabilidad en el archivo links.php(encargado de agregar los links a la base de datos.) que permite a usuarios registrados agregar links sin permiso.</p>
+
+<p>Pues revisando hoy el posicionamiento en Google me di cuenta que esa pagina bajo en los resultados, y decidí estudiar el problema y cual fue mi sorpresa al ver la caché de Google mostraba tres links los cuales apuntan a un blog de la universidad de Yale:</p>
+
+<p>hxxp://xenon.physics.yale.edu/~nikx/home/wp-content/includes/cache/cialis/buy-cialis.html</p>
+
+<p>hxxp://xenon.physics.yale.edu/~nikx/home/wp-content/includes/cache/cialis/buy-cialis-online.html</p>
+
+<p>hxxp://xenon.physics.yale.edu/~nikx/home/wp-content/includes/cache/cialis/cheap-cialis.html</p>
+
+<p>Los cuales al mismo tiempo redireccionan a:</p>
+
+<p>hxxp://trustedtablets.com/cialis.htm?wm=4497&amp;tr=8027</p>
+
+<p>&nbsp; ****Sustituir las x en hxxp por t****</p>
+
+<p>En la cual parece que venden viagra o algo así.</p>
+
+<p>Investigue un poco mas del bug y se que afecta a la versión de WordPress 2.3 y todas las anteriores, ese blog tiene una versión anterior a la 2.3 y tenia el registro de usuarios activado, hasta el día de hoy.</p>
+
+<p>También se que existe una solución, la cual es actualizar el archivo links.php, pero parece que solo es para el WordPress 2.3.</p>
+
+<p>En esa pagina tengo demasiados usuarios registrados y no se cual de ellos fue el que hizo semejante atrocidad, así que tendré que borrarlos todos, por ahora no me interesa actualizar WordPress.</p>
+
+<p>En SigT.net nos enseñan <a href="http://sigt.net/archivo/exploit-en-wordpress-permite-anadir-enlaces-al-blogroll.xhtml">como solucionarlo</a> y ponen un poco mas de información.</p>
+
+<p>WordPress Blogroll Hack</p>
+
+    <div>
+      
+        <a class='previous' href='http://diegomichel.org/old_blog_posts/62-liberar-espacio-en-windows-vista/'> Liberar Espacio en Windows Vista</a>
+      |
+      
+      
+        <a class='previous' href='http://diegomichel.org/old_blog_posts/60-por-fin-un-administrador-de-blog-que-me-gusta-d/'> Por fin un administrador de blog que me gusta :D</a>
+      
+    </div>
+    <p><a href="http://diegomichel.org/">Home</a></p>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="/js/tether.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+</body>
+</html>
+

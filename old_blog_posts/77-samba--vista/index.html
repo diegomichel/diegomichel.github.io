@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <title>Samba &#43; Vista</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/tether.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-faded">
+      <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header">
+        &#9776;
+      </button>
+      <div class="collapse navbar-toggleable-xs" id="navbar-header">
+        <a class="navbar-brand navbar-invenrt" href="http://diegomichel.org/">
+          <i class="fa fa-home fa-2x"></i>
+        </a>
+        <div class="form-inline pull-xs-right">
+          <a class="btn btn-default" href="http://github.com/diegomichel">
+            <i class="fa fa-github fa-2x"></i>
+          </a>
+        </div>
+      </div>
+    </nav> 
+    <div class="container">
+    
+<h1>Samba &#43; Vista</h1>
+    <h2>Mon, Dec3, 2007</h2>
+    <p>Mini Manual de como usar samba en una red de equipos con windows vista. Primero vamos a listar los recursos compartidos, que se hace de la siguiente manera:</p>
+
+<blockquote>
+<p>smbcliente -L jesus-pc -U jesusdonde jesus-pc es el nombre del equipo y jesus el nombre de usuario. y nos mostrara una salida como esta:&gt; [root@localhost ~]# smbclient -L jesus-pc -U jesus Password: Domain=[JESUS-PC] OS=[Windows Vista &trade; Ultimate 6000] Server=[Windows Vista &trade; Ultimate 6.0] Sharename Type Comment &mdash;&mdash;&mdash; &mdash;- &mdash;&mdash;- ADMIN$ Disk Remote Admin C Disk C$ Disk Default share compartido Disk IPC$ IPC Remote IPC Domain=[JESUS-PC] OS=[Windows Vista &trade; Ultimate 6000] Server=[Windows Vista &trade; Ultimate 6.0] Server Comment &mdash;&mdash;&mdash; &mdash;&mdash;- Workgroup Master &mdash;&mdash;&mdash; &mdash;&mdash;-Vemos que esta compartido un directorio llamado compartir y la unidad C, para acceder a ellos es bastante facil. simplemente escribe en la consola lo siguiente:&gt; smbclient //jesus-pc/compartido -U jesuste pedir password de nuevo y ya que entre podras ejecutar comandos como si de ftp se tratara, teclea help para ver los comandos disponibles y eso es todo :p</p>
+</blockquote>
+
+    <div>
+      
+        <a class='previous' href='http://diegomichel.org/old_blog_posts/78-como-instalar-paquetes-de-aur-en-archlinux/'> Como instalar Paquetes de AUR en archlinux.</a>
+      |
+      
+      
+        <a class='previous' href='http://diegomichel.org/old_blog_posts/76-el-problema-dejo-de-funcionar-por-un-problema/'> El problema dejo de funcionar por un problema!</a>
+      
+    </div>
+    <p><a href="http://diegomichel.org/">Home</a></p>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="/js/tether.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+</body>
+</html>
+

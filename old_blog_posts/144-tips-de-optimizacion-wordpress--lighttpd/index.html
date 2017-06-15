@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <title>Tips de optimizacion wordpress &#43; lighttpd.</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/tether.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-faded">
+      <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header">
+        &#9776;
+      </button>
+      <div class="collapse navbar-toggleable-xs" id="navbar-header">
+        <a class="navbar-brand navbar-invenrt" href="http://diegomichel.org/">
+          <i class="fa fa-home fa-2x"></i>
+        </a>
+        <div class="form-inline pull-xs-right">
+          <a class="btn btn-default" href="http://github.com/diegomichel">
+            <i class="fa fa-github fa-2x"></i>
+          </a>
+        </div>
+      </div>
+    </nav> 
+    <div class="container">
+    
+<h1>Tips de optimizacion wordpress &#43; lighttpd.</h1>
+    <h2>Fri, Apr16, 2010</h2>
+    <p>Lo primero que se debe hacer es activar la opcin de cache de lighttpd. abre tu archivo /etc/lighttpd/lighttpd.conf y descomenta el mod_compress. En mi caso quedo asi.</p>
+
+<blockquote>
+<p>server.modules = ( &ldquo;mod_access&rdquo;, &ldquo;mod_alias&rdquo;, # &ldquo;mod_accesslog&rdquo;, &ldquo;mod_expire&rdquo;, &ldquo;mod_compress&rdquo;, &ldquo;mod_fastcgi&rdquo;, &ldquo;mod_cgi&rdquo;, &ldquo;mod_rewrite&rdquo;, &ldquo;mod_setenv&rdquo;, # &ldquo;mod_redirect&rdquo;, # &ldquo;mod_evhost&rdquo;, # &ldquo;mod_usertrack&rdquo;, # &ldquo;mod_rrdtool&rdquo;, # &ldquo;mod_webdav&rdquo;, # &ldquo;mod_expire&rdquo;, # &ldquo;mod_flv_streaming&rdquo;, # &ldquo;mod_evasive&rdquo; )Tambin anade las siguientes lineas:&gt; compress.cache-dir = &ldquo;/var/cache/lighttpd/compress/&rdquo; compress.filetype = (&ldquo;text/plain&rdquo;, &ldquo;text/html&rdquo;, &ldquo;application/x-javascript&rdquo;, &ldquo;text/css&rdquo;, &ldquo;text/javascript&rdquo;) <strong>compress.cache-dir</strong> es donde se guardan los archivos y <strong>compress.filetype</strong> le dice a lighttpd que archivos se pueden guardar en la cache. Ya con eso tienes la mayoria de los archivos en cache. El caso de php es especial ya que es dinmico, para activar la cache de php, debes editar el archivo php.ini en /etc/php5/cgi/php.ini y descomentar las siguientes lineas:&gt; zlib.output_compression = On zlib.output_handler = 1y por ultimo reinicias lighttpd.&gt; /etc/init.d/lighttpd restartNota: Instrucciones basadas en Debian Lenny</p>
+</blockquote>
+
+    <div>
+      
+        <a class='previous' href='http://diegomichel.org/old_blog_posts/143-optimizacion-de-la-velocidad-de-carga-de-un-website/'> Optimizacion de la velocidad de carga de un website.</a>
+      |
+      
+      
+        <a class='previous' href='http://diegomichel.org/old_blog_posts/146-utilidades-para-checar-la-optimizacion-de-una-pagina/'> Utilidades para checar la optimizacion de una pagina.</a>
+      
+    </div>
+    <p><a href="http://diegomichel.org/">Home</a></p>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="/js/tether.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+</body>
+</html>
+

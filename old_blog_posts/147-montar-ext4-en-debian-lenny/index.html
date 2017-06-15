@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <title>Montar Ext4 en Debian Lenny.</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/tether.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-faded">
+      <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header">
+        &#9776;
+      </button>
+      <div class="collapse navbar-toggleable-xs" id="navbar-header">
+        <a class="navbar-brand navbar-invenrt" href="http://diegomichel.org/">
+          <i class="fa fa-home fa-2x"></i>
+        </a>
+        <div class="form-inline pull-xs-right">
+          <a class="btn btn-default" href="http://github.com/diegomichel">
+            <i class="fa fa-github fa-2x"></i>
+          </a>
+        </div>
+      </div>
+    </nav> 
+    <div class="container">
+    
+<h1>Montar Ext4 en Debian Lenny.</h1>
+    <h2>Sat, Apr17, 2010</h2>
+    <p>Debian Lenny no soporta el formato Ext4 oficialmente, por que era experimental en el momento en que Lenny fue lanzada, pero tenia un driver experimental que puedes usar para leer los archivos.</p>
+
+<blockquote>
+<p>tune2fs -E test_fs /dev/sdax mount -t ext4dev -o ro /dev/sdax /mnt/sdax</p>
+</blockquote>
+
+    <div>
+      
+        <a class='previous' href='http://diegomichel.org/old_blog_posts/148-freebsd-usrports-no-such-file-or-directory/'> Freebsd /usr/ports: No such file or directory.</a>
+      |
+      
+      
+        <a class='previous' href='http://diegomichel.org/old_blog_posts/143-optimizacion-de-la-velocidad-de-carga-de-un-website/'> Optimizacion de la velocidad de carga de un website.</a>
+      
+    </div>
+    <p><a href="http://diegomichel.org/">Home</a></p>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="/js/tether.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+</body>
+</html>
+

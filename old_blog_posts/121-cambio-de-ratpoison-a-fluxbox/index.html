@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <title>Cambio de Ratpoison a fluxbox.</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/tether.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-faded">
+      <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header">
+        &#9776;
+      </button>
+      <div class="collapse navbar-toggleable-xs" id="navbar-header">
+        <a class="navbar-brand navbar-invenrt" href="http://diegomichel.org/">
+          <i class="fa fa-home fa-2x"></i>
+        </a>
+        <div class="form-inline pull-xs-right">
+          <a class="btn btn-default" href="http://github.com/diegomichel">
+            <i class="fa fa-github fa-2x"></i>
+          </a>
+        </div>
+      </div>
+    </nav> 
+    <div class="container">
+    
+<h1>Cambio de Ratpoison a fluxbox.</h1>
+    <h2>Sun, Feb7, 2010</h2>
+    <p>No me tomen a mal, ratpoison es un gran manejador de ventanas, pero tiene sus debilidades con ciertas aplicaciones escritas en java( netbeans que use en <a href="http://shareTXT.com">shareTXT</a> ) y otras como gimp que usan multiples ventanas. Ratpoison que se describe as mismo como un sistema que no necesita de grandes libreras, sin grficos bonitos, sin bordes, y por ultimo sin la dependencia del roedor(refirindose al ratn) Fluxbox se describe como ligero, lleno de opciones que lo hacen fcil y extremadamente rpido de manejar. As es como yo convert fluxbox en un tipo de ratpoison sin grficos bonitos, sin bordes y sin dependencia del roedor. <strong>1. Instalar todas las aplicaciones necesarias.</strong> En Gentoo</p>
+
+<blockquote>
+<p>emerge fluxbox dmenu wmctrl libnotify xsetroot osd_catEn Debian o Ubuntu&gt; sudo aptitude install fluxbox dmenu wmctrl libnotify xsetroot osd_cat <strong>2.-Crear los archivos de configuracin.</strong>**.xinitrc <strong>&gt; xsetroot -solid white xterm -fa &ldquo;Lucida Console&rdquo; -fs 10 -maximized &amp; exec fluxbox</strong> ~/.fluxbox/keys<strong>&gt; mod4 Right :MacroCmd {Exec echo &ldquo;Right&rdquo; | osd_cat -d1 -p middle -A center -O 2 -f *-fixed-*-*-*-20-* } {NextWindow static} mod4 Left :MacroCmd {Exec echo &ldquo;Left&rdquo; | osd_cat -d1 -p middle -A center -O 2 -f *-fixed-*-*-*-20-* } {PrevWindow static} none KP_Right :MacroCmd {Exec echo &ldquo;Right&rdquo; | osd_cat -d1 -p middle -A center -O 1 -f *-fixed-*-*-*-20-* } {NextWindow {static}} none KP_Up :MacroCmd {Exec notify-send -t 2000 &ldquo;<code>wmctrl -lx|egrep -v 'N/A'|awk '{ print $3 }'|sed -e 's/./ /g'|awk '{ print $1 }'</code>&rdquo;} none KP_Left :MacroCmd {Exec echo &ldquo;Left&rdquo; | osd_cat -d1 -p middle -A center -O 1 -f *-fixed-*-*-*-20-* } {PrevWindow {static}} mod4 r :MacroCmd {Exec echo &ldquo;Restarted&rdquo; | osd_cat -d1 -p middle -A center -O 1 -f *-fixed-*-*-*-20-* } {Restart} mod4 k :MacroCmd {Exec echo &ldquo;Closed Window&rdquo; | osd_cat -d1 -p middle -A center -O 1 -f *-fixed-*-*-*-20-* } {Close} mod4 1 :MacroCmd {Exec notify-send -t 1000 1 } {GoToWindow 1 {static}} mod4 2 :MacroCmd {Exec notify-send -t 1000 2 } {GoToWindow 2 {static}} mod4 3 :MacroCmd {Exec notify-send -t 1000 3 } {GoToWindow 3 {static}} mod4 4 :MacroCmd {Exec notify-send -t 1000 4 } {GoToWindow 4 {static}} mod4 5 :MacroCmd {Exec notify-send -t 1000 5 } {GoToWindow 5 {static}} mod4 6 :MacroCmd {Exec notify-send -t 1000 6} {GoToWindow 6 {static}} none XF86Launch4 :ExecCommand exec $(dmenu_path | dmenu -nb &lsquo;#ffff90&rsquo; -sb &lsquo;#a6b38d&rsquo; -sf &lsquo;#070806&rsquo;)</strong>~/.fluxbox/apps<strong>&gt; <a href="name=.*[^bgimpb]">app</a> [Dimensions] {1680 1050} <a href="UPPERLEFT">Position</a> {0 0} [Deco] {NONE} [end] <a href="name=xterm">app</a> [Dimensions] {1680 1050} <a href="UPPERLEFT">Position</a> {0 0} [Deco] {BORDER} [Maximized] {yes} [Fullscreen] {no} [Close] {yes} [end]<em>Notas: Lucida Console no es una fuente default del sistema, la tienes que instalar por separado. XF86Launch4 es una tecla especial de mi teclado. 1680 1050 es la resolucin de mi pantalla, debers cambiarlo para que se adapte la resolucin de tu sistema.</em></strong>Conclusin:** Fluxbox no puede emular completamente ratpoison, pero con ayuda de otras aplicaciones pequeas puede dar resultados aceptables, ademas de que nos da la ventaja de correr aplicaciones java y multi-window como gimp, sin mayores problemas.<center>
+Screenshot</p>
+</blockquote>
+
+<p><a href="http://Pictat.com/show.php?i=/2010/2/7/112402010020712.png" target="_blank"><img src="http://Pictat.com/t/2010/2/7/112402010020712.png" border="0" alt="Free Image Hosting at www.Pictat.com"></a> </center></p>
+
+    <div>
+      
+        <a class='previous' href='http://diegomichel.org/old_blog_posts/122-alarma-simple-con-linux/'> Alarma simple con linux.</a>
+      |
+      
+      
+        <a class='previous' href='http://diegomichel.org/old_blog_posts/118-lost/'> Lost</a>
+      
+    </div>
+    <p><a href="http://diegomichel.org/">Home</a></p>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="/js/tether.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+</body>
+</html>
+

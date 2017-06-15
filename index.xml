@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Diego Michel Rubio Ramirez Software Engineer</title>
+    <link>http://diegomichel.org/</link>
+    <description>Recent content on Diego Michel Rubio Ramirez Software Engineer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-MX</language>
+    <lastBuildDate>Mon, 16 Nov 2015 15:31:00 -0600</lastBuildDate>
+    <atom:link href="http://diegomichel.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Gohugo.io favorite themes</title>
+      <link>http://diegomichel.org/favorite_themes/</link>
+      <pubDate>Mon, 16 Nov 2015 15:31:00 -0600</pubDate>
+      
+      <guid>http://diegomichel.org/favorite_themes/</guid>
+      <description>&lt;p&gt;I been testing gohugo.io themes and i have found the following ones work fine. The others sent warnings or just didn&amp;rsquo;t display as they should.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;vienna&lt;/li&gt;
+&lt;li&gt;simple-a&lt;/li&gt;
+&lt;li&gt;shiori&lt;/li&gt;
+&lt;li&gt;redlounge&lt;/li&gt;
+&lt;li&gt;purehugo&lt;/li&gt;
+&lt;li&gt;material-design&lt;/li&gt;
+&lt;li&gt;liquorice&lt;/li&gt;
+&lt;li&gt;landing-page-hugo&lt;/li&gt;
+&lt;li&gt;journal&lt;/li&gt;
+&lt;li&gt;hyde&lt;/li&gt;
+&lt;li&gt;hugo-uno&lt;/li&gt;
+&lt;li&gt;hugo-h5bp&lt;/li&gt;
+&lt;li&gt;herring-cove&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Updated to goHugo</title>
+      <link>http://diegomichel.org/post/updatetohugo/</link>
+      <pubDate>Thu, 12 Nov 2015 22:20:32 -0600</pubDate>
+      
+      <guid>http://diegomichel.org/post/updatetohugo/</guid>
+      <description>&lt;p&gt;I dont update this blog as much as i would like, and it was using wordpress with mysql, which seems to be a waste of resources, so i will give a go to &lt;a href=&#34;http://gohugo.io&#34;&gt;gohugo.io&lt;/a&gt; which was recommended to me by &lt;a href=&#34;http://emberigniter.com&#34;&gt;Frank from EmberIgniter&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;GoHugo is website platform that works by generating the html files and then you can publish them. There is not admin section like in wordpress, that means you can/have to do everything from the CLI, generate the content and upload it to your server.&lt;/p&gt;
+
+&lt;p&gt;So how it&amp;rsquo;s my setup&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Hugo and markdown files hosted with &lt;a href=&#34;http://bitbucket.org&#34;&gt;BitBucket&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;A copy on my personal laptop where i update and do push either to bitbucket or my server&lt;/li&gt;
+&lt;li&gt;Server running &lt;a href=&#34;http://nginx.org&#34;&gt;nginx&lt;/a&gt;, considered G-Wan but it didn&amp;rsquo;t run and then i read alot of reviews saying that it was insecure.&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Motivation</title>
+      <link>http://diegomichel.org/old_blog_posts/178-motivation/</link>
+      <pubDate>Tue, 12 Aug 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://diegomichel.org/old_blog_posts/178-motivation/</guid>
+      <description>&lt;p&gt;Intrinsic Motivators&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Autonomy&lt;/li&gt;
+&lt;li&gt;Mastering&lt;/li&gt;
+&lt;li&gt;Playful&lt;/li&gt;
+&lt;li&gt;Curiosity&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Extrinsic Motivators = Kills creativity = Good for mechanical tasks tho :)&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Rewards&lt;/li&gt;
+&lt;li&gt;Money&lt;/li&gt;
+&lt;li&gt;Grades&lt;/li&gt;
+&lt;li&gt;Punishment&lt;/li&gt;
+&lt;li&gt;Competition&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Students who are intrinsically motivated are more likely to engage in the task willingly as well as work to improve their skills, which will increase their capabilities.[]&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Changing the oil for the car</title>
+      <link>http://diegomichel.org/old_blog_posts/177-changing-the-oil-for-the-car/</link>
+      <pubDate>Mon, 03 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://diegomichel.org/old_blog_posts/177-changing-the-oil-for-the-car/</guid>
+      <description>&lt;p&gt;Today i will change the oil of my jeep Tj, i have been calling different &amp;ldquo;refaccionarias&amp;rdquo; here in Autlan, and found the cheaper be El Farolito for Mobil one oil, so i will be going there and buying there my stuff :).&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>TGL: People taking care of unprotected animals</title>
+      <link>http://diegomichel.org/old_blog_posts/175-tgl-people-taking-care-of-unprotected-animals/</link>
+      <pubDate>Sun, 02 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://diegomichel.org/old_blog_posts/175-tgl-people-taking-care-of-unprotected-animals/</guid>
+      <description>&lt;p&gt;Today in the morning i went for a walk and on the way i found a little dog with a bone or something barking at a door, i didn&amp;rsquo;t put to much attention to it. Then on my way back, i found the same dog but this time there was an old guy trying to catch it, then i noticed a bigger dog too, little dog mom i thought and i finally realized that the little dog was trying to get in, its an old abandoned house but have some steps which the little dog cant pass, so this old fella is trying to trap the dog to release it over the door. But he fails i try to help but the little dog runs under the car, i talk to this person and he tells me he feeds the dog&amp;rsquo;s, which is really the good thing of this day, just knowing there is someone who is willing to help that dog family to survive :).&lt;/p&gt;
+
+&lt;p&gt;Also my brother helped me with my car fixing :).&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Que es el numero i (imaginario)</title>
+      <link>http://diegomichel.org/old_blog_posts/174-que-es-el-numero-i-imaginario/</link>
+      <pubDate>Sat, 14 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://diegomichel.org/old_blog_posts/174-que-es-el-numero-i-imaginario/</guid>
+      <description>&lt;p&gt;Es un numero inventado para resolver un problema&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;el problema matemtico que hizo que se creara dicho numero fue que cual era el cuadrado de un numero que da como resultado un numero negativo, y la respuesta fue el numero imaginario. o lo que es lo mismo sacar la raz cuadrada de un numero negativo.&lt;/p&gt;
+
+&lt;p&gt;por ejemplo&lt;/p&gt;
+
+&lt;p&gt;x^2 = -4&lt;/p&gt;
+
+&lt;p&gt;si se trata de resolver dicho problema sin usar el numero i simplemente no se encontrara respuesta.&lt;/p&gt;
+
+&lt;p&gt;pero si usamos dicho numero imaginario tenemos que&lt;/p&gt;
+
+&lt;p&gt;x = i*2&lt;/p&gt;
+
+&lt;p&gt;el cuadrado de i es -1 por el cuadrado de 2 que es 4 nos da -4&lt;/p&gt;
+
+&lt;p&gt;Codigo para matlab.
+`&amp;gt;&amp;gt; (i*2)^2&lt;/p&gt;
+
+&lt;p&gt;ans =&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;-4
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;`&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>My next game-habit project</title>
+      <link>http://diegomichel.org/old_blog_posts/1-my-next-gamehabit-project/</link>
+      <pubDate>Tue, 02 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://diegomichel.org/old_blog_posts/1-my-next-gamehabit-project/</guid>
+      <description>&lt;p&gt;Im lately working on a web-game base which is inspired by &lt;a href=&#34;https://habitrpg.com/&#34; title=&#34;HabitRPG&#34;&gt;habitrpg&lt;/a&gt;, so far is looking very good, i started liking it a lot, and im using it everyday, i do still don&amp;rsquo;t have a name on it, im also very much interested in making a version for android, and maybe make some money of it, even if not it would be great to manage my own life, where it major pitfall is the bad habit i have gained thru the years.&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;I know how to make habits, but i&amp;rsquo;m always tend to forget about them, i can one day make a plan and the next day i have forgotten about it, try to make a good habit about eating clean, ill do it 3 days, the fourth day i go out of my way and end up failing. After that i just forget instead of going back to the good road.&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;This Webgame, it help you retain your habit by giving you good rewards that you, your own person add, lets say you want to make a good habit, always select something simple but it is worth in the long run, example, Drink one glass of Water set it to give you one point, now on rewards add a new one called, a Snicker bar or whatever, and give it 30 points, or whatever your consider fair. Fair is the key word if is too easy or too hard you will fail miserably.&lt;/p&gt;
+
+&lt;p&gt;Here is a screenshot of the project, i&amp;rsquo;m very focused on effects and graphics because i like something that looks good.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://imgur.com/x4pxqyx&#34;&gt;&lt;img src=&#34;http://i.imgur.com/x4pxqyx.png&#34; alt=&#34;&#34; title=&#34;Hosted by imgur.com&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Convertir between screen to world and coordinates libgdx</title>
+      <link>http://diegomichel.org/old_blog_posts/171-convertir-between-screen-to-world-and-coordinates-libgdx/</link>
+      <pubDate>Wed, 30 Jan 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://diegomichel.org/old_blog_posts/171-convertir-between-screen-to-world-and-coordinates-libgdx/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Vector3 mouseCoordinates = new Vector3(screenX,screenY,0); Teeport.camera.unproject(mouseCoordinates); Vector2 playerPosition = Teeport.player.body.getPosition(); Utils.vectorInWorldCoordinates(playerPosition);Just in case i need it again later. &amp;nbsp; Mouse(camera) to world coordinates
+1. Unproject mouse coordinates
+2. Convert your object position from box2d to world coordinates and thats it :)&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>My BattleStation!</title>
+      <link>http://diegomichel.org/old_blog_posts/172-my-battlestation/</link>
+      <pubDate>Wed, 30 Jan 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://diegomichel.org/old_blog_posts/172-my-battlestation/</guid>
+      <description>&lt;p&gt;Just coding some Teeport! &amp;nbsp; &lt;a href=&#34;http://imgur.com/kQVy6JS&#34;&gt;&lt;img src=&#34;http://i.imgur.com/kQVy6JS.png&#34; alt=&#34;&#34; title=&#34;Hosted by imgur.com&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Today i coded...</title>
+      <link>http://diegomichel.org/old_blog_posts/173-today-i-coded/</link>
+      <pubDate>Wed, 30 Jan 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://diegomichel.org/old_blog_posts/173-today-i-coded/</guid>
+      <description>&lt;p&gt;Well i did my Controls for Android devices&amp;hellip; and they are fucking awesome :D Here is a image of ma game&amp;hellip; &lt;a href=&#34;http://imgur.com/alOnMgu&#34;&gt;&lt;img src=&#34;http://i.imgur.com/alOnMgu.png&#34; alt=&#34;&#34; title=&#34;Hosted by imgur.com&#34; /&gt;&lt;/a&gt;Just need to replace that gun i stole from google images..lol So much ideas, so little time, i would like to make this game online, add enemys, etc&amp;hellip;!, maybe go opensource?&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How to make Tiled maps load on libgdx.</title>
+      <link>http://diegomichel.org/old_blog_posts/170-how-to-make-tiled-maps-load-on-libgdx/</link>
+      <pubDate>Mon, 28 Jan 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://diegomichel.org/old_blog_posts/170-how-to-make-tiled-maps-load-on-libgdx/</guid>
+      <description>&lt;p&gt;1.- Download libgdx libs, and put them in for example c:gdxnew 2.- Create your map with tiled and put in a directory example c:mymap 3.- Create an output directory example: c:libgdxmap 4.- open cmd(command line) and execute &amp;nbsp;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;java -cp C:gdxnewgdx.jar;C:gdxnewextensionsgdx-toolsgdx-tools.jar;C:gdxnewextensionsgdx-tiled-preprocessorgdx-tiled-preprocessor.jar com.badlogic.gdx.tiledmappacker.TiledMapPacker c:mymap c:libgdxmapNow you can use the files on c:libgdxmap on your libgdx project :) &amp;nbsp; I was using just the texture packer to generate the the atlas for the map, but you actually need to use the &lt;strong&gt;TiledMapPacker&lt;/strong&gt; to make it work, or it will not render/draw your tiled map on &lt;strong&gt;libgdx&lt;/strong&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Dibujar linea en libgdx</title>
+      <link>http://diegomichel.org/old_blog_posts/169-dibujar-linea-en-libgdx/</link>
+      <pubDate>Tue, 08 Jan 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://diegomichel.org/old_blog_posts/169-dibujar-linea-en-libgdx/</guid>
+      <description>&lt;p&gt;&lt;code&gt;ShapeRenderer shapeRenderer = new ShapeRenderer();
+                  shapeRenderer.begin(ShapeType.Line);
+                  shapeRenderer.setColor(1, 1, 0, 1);
+                  shapeRenderer.line(x1, y1, x2, y2);
+                  shapeRenderer.end();&lt;/code&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Por que comemos 3 veces al dia?</title>
+      <link>http://diegomichel.org/old_blog_posts/168-por-que-comemos-3-veces-al-dia/</link>
+      <pubDate>Mon, 10 Dec 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://diegomichel.org/old_blog_posts/168-por-que-comemos-3-veces-al-dia/</guid>
+      <description>&lt;p&gt;Alguna idea?&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tecnica para vencer el miedo a empezar o a terminar :p</title>
+      <link>http://diegomichel.org/old_blog_posts/167-tecnica-para-vencer-el-miedo-a-empezar-o-a-terminar-p/</link>
+      <pubDate>Sun, 18 Nov 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://diegomichel.org/old_blog_posts/167-tecnica-para-vencer-el-miedo-a-empezar-o-a-terminar-p/</guid>
+      <description>&lt;p&gt;Muchas veces me ha pasado que tengo algo que hacer sin embargo, de alguna manera nunca empiezo dicha tarea. Existe una tecnica llamada Persistent Starting que consiste en lo siguiente: 1.- Escoge algo que tengas que hacer y has procrastinado por un tiempo. 2.- Ahora invierte 5 minutos en dicha tarea, y si en 5 minutos no quieres seguir haciendola deja de hacerla. A los 5 minutos no querras dejarla de hacer. El truco consiste en que el cerebro entra en un modo de autopiloto por asi decirlo. Fuente: &lt;a href=&#34;http://www.reddit.com/r/GetMotivated/comments/qqd7s/reddit_this_is_my_hand_clamp_its_been_the_best/c3zm14q&#34; title=&#34;http://www.reddit.com/r/GetMotivated/comments/qqd7s/reddit\_this\_is\_my\_hand\_clamp\_its\_been\_the\_best/c3zm14q&#34;&gt;http://www.reddit.com/r/GetMotivated/comments/qqd7s/reddit_this_is_my_hand_clamp_its_been_the_best/c3zm14q&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Internet Telcel 3g Fallando</title>
+      <link>http://diegomichel.org/old_blog_posts/166-internet-telcel-3g-fallando/</link>
+      <pubDate>Tue, 09 Aug 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://diegomichel.org/old_blog_posts/166-internet-telcel-3g-fallando/</guid>
+      <description>&lt;p&gt;El dia de hoy 9 de agosto de 2011, el internet telcel 3g andaba fallando en Guasave, Sinaloa, supongo que es por las lluvias. Estuvo como 5 horas caido desde la 1am a las 6am. Por lo demas esta muy bien 1 Mb de bajada y como 64Kb de subida, aunque un poco caro eso si&amp;hellip; a 500 Pesos(45USD) 3Gb(o 30 dias), pero es una buena opcion en zonas donde no existen otros proveedores. Basicamente tienes un limite de 3072 MegaBytes, asi que no le hagas como yo y te pongas a descargar series de tv(crei que eran 3Gb por dia jajaja) por que no te va a durar nada.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

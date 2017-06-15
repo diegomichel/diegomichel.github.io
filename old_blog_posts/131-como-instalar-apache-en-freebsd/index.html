@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <title>Como instalar apache en freebsd</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/tether.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-faded">
+      <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header">
+        &#9776;
+      </button>
+      <div class="collapse navbar-toggleable-xs" id="navbar-header">
+        <a class="navbar-brand navbar-invenrt" href="http://diegomichel.org/">
+          <i class="fa fa-home fa-2x"></i>
+        </a>
+        <div class="form-inline pull-xs-right">
+          <a class="btn btn-default" href="http://github.com/diegomichel">
+            <i class="fa fa-github fa-2x"></i>
+          </a>
+        </div>
+      </div>
+    </nav> 
+    <div class="container">
+    
+<h1>Como instalar apache en freebsd</h1>
+    <h2>Sat, Mar13, 2010</h2>
+    <p>Nos vamos al directorio del port en este caso yo quiero apache 2.2</p>
+
+<blockquote>
+<p>cd /usr/ports/www/apache22/y ejecutamos:&gt; make install cleanAgregamos la siguiente linea a /etc/rc.conf para que apache inicie al iniciar el sistema.&gt; apache22_enable=&ldquo;YES&rdquo;Para iniciar de forma manual apache podemos usar el siguiente comando:&gt; apachectl startAcepta las opciones restart, graceful y stop, restart y stop se describen por si mismas, graceful es un restart sin forzar. Tambien podemos usar la opcion configtest que nos dice si los archivos de configuracion no tienen errores. Ejemplo:&gt; [root@host ~]# /usr/local/sbin/apachectl configtest Syntax OK</p>
+</blockquote>
+
+    <div>
+      
+        <a class='previous' href='http://diegomichel.org/old_blog_posts/128-como-definir-variables-in-freebsd/'> Como definir variables in freebsd.</a>
+      |
+      
+      
+        <a class='previous' href='http://diegomichel.org/old_blog_posts/129-como-instalar-bash-en-freebsd/'> Como instalar bash en freebsd</a>
+      
+    </div>
+    <p><a href="http://diegomichel.org/">Home</a></p>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="/js/tether.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+</body>
+</html>
+

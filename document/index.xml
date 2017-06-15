@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Documents on Diego Michel Rubio Ramirez Software Engineer</title>
+    <link>http://diegomichel.org/document/</link>
+    <description>Recent content in Documents on Diego Michel Rubio Ramirez Software Engineer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-MX</language>
+    <lastBuildDate>Fri, 18 Dec 2015 03:28:04 -0600</lastBuildDate>
+    <atom:link href="http://diegomichel.org/document/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Diego Michel Rubio Ramirez - Software Engineer</title>
+      <link>http://diegomichel.org/document/cv_english/</link>
+      <pubDate>Fri, 18 Dec 2015 03:28:04 -0600</pubDate>
+      
+      <guid>http://diegomichel.org/document/cv_english/</guid>
+      <description>&lt;p&gt;&lt;div class=&#34;container&#34;&gt;
+  &lt;div class=&#34;row&#34;&gt;
+    &lt;div class=&#34;col-xs-4&#34;&gt;
+      &lt;div class=&#34;row&#34;&gt;
+        Obregon #643
+      &lt;/div&gt;
+      &lt;div class=&#34;row&#34;&gt;
+        Centro, Guasave, Sinaloa.
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;col-xs-5&#34;&gt;
+      &lt;h3 class=&#34;text-center&#34;&gt;Diego Rubio Ramírez&lt;/h3&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;col-xs-3&#34;&gt;
+      &lt;div class=&#34;row text-right&#34;&gt;(331) 863-7048&lt;/div&gt;
+      &lt;div class=&#34;row text-right&#34;&gt;diegomichel@gmail.com&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=row&gt;
+    &lt;h4&gt;Professional Experience&lt;/h4&gt;
+    &lt;hr /&gt;
+  &lt;/div&gt;
+  &lt;div class=row&gt;
+    &lt;div class=&#34;col-xs-4&#34;&gt;&lt;strong&gt;Ruby on Rails Developer&lt;/strong&gt;&lt;/div&gt;
+    &lt;div class=&#34;col-xs-5&#34;&gt;&lt;p class=&#34;text-center&#34;&gt;&lt;strong&gt;Novotorium&lt;/strong&gt;&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&#34;col-xs-3&#34;&gt;
+      &lt;div class=&#34;row text-right&#34;&gt;&lt;strong&gt;May 2016 - Now&lt;/strong&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=row&gt;&lt;div class=col-xs-12&gt;Galvanizer&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=row&gt;
+    &lt;div class=col-xs-12&gt;
+      &lt;ul&gt;
+        &lt;li&gt;Managed the backlog and organized the team.&lt;/li&gt;
+        &lt;li&gt;Build a wrapper for GlassFrog API using Ruby metaprogramming.&lt;/li&gt;
+        &lt;li&gt;D3.js visualization with data from GlassFrog API.&lt;/li&gt;
+        &lt;li&gt;Frontend development using Bootstrap.&lt;/li&gt;
+        &lt;li&gt;Managed and configured apps on Heroku.&lt;/li&gt;
+        &lt;li&gt;Guided a non-technical person on how to use Git, Heroku and c9.io.&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=row&gt;&lt;div class=col-xs-12&gt;BOS&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=row&gt;
+    &lt;div class=col-xs-12&gt;
+      &lt;ul&gt;
+        &lt;li&gt;Debugged and fixed issue with ruby process being killed by Linux.&lt;/li&gt;
+        &lt;li&gt;Added code improvements like the use of partials.&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=row&gt;&lt;div class=col-xs-12&gt;HFN&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=row&gt;
+    &lt;div class=col-xs-12&gt;
+      &lt;ul&gt;
+        &lt;li&gt;Optimized the system so it loaded under three seconds.&lt;/li&gt;
+        &lt;li&gt;Managed AWS instances, deployed changes with Chef.&lt;/li&gt;
+        &lt;li&gt;Added missing cucumber tests.&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=row&gt;&lt;div class=col-xs-12&gt;MobileApp ionic&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=row&gt;
+    &lt;div class=col-xs-12&gt;
+      &lt;ul&gt;
+        &lt;li&gt;Inherited code base from another dev and make it work.&lt;/li&gt;
+        &lt;li&gt;Prepared application to be more dev friendly.&lt;/li&gt;
+        &lt;li&gt;Documented iOS app signing process under Linux.&lt;/li&gt;
+        &lt;li&gt;Tested and debugged Push Notification service with AWS.&lt;/li&gt;
+        &lt;li&gt;Added Google Tag Manager and Google Analytics to a hybrid app.&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=row&gt;&lt;div class=col-xs-12&gt;Misc&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=row&gt;
+    &lt;div class=col-xs-12&gt;
+      &lt;ul&gt;
+        &lt;li&gt;Mentor a junior developer.&lt;/li&gt;
+        &lt;li&gt;Lead Chef Journeys.&lt;/li&gt;
+        &lt;li&gt;Completed course Introduction to Data Science with Python.&lt;/li&gt;
+        &lt;li&gt;Reviewed code from coworkers and had my code reviewed.&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;br /&gt;
+  &lt;div class=row&gt;
+    &lt;div class=&#34;col-xs-4&#34;&gt;&lt;strong&gt;Ruby on Rails Developer&lt;/strong&gt;&lt;/div&gt;
+    &lt;div class=&#34;col-xs-5&#34;&gt;&lt;p class=&#34;text-center&#34;&gt;&lt;strong&gt;AgileKoding&lt;/strong&gt;&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&#34;col-xs-3&#34;&gt;
+      &lt;div class=&#34;row text-right&#34;&gt;&lt;strong&gt;July 2015 - June 2016&lt;/strong&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=row&gt;&lt;div class=col-xs-12&gt;EMAP&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=row&gt;
+    &lt;div class=col-xs-12&gt;
+      &lt;ul&gt;
+        &lt;li&gt;API REST building for Mobile Application.&lt;/li&gt;
+        &lt;li&gt;Automation of deployment.&lt;/li&gt;
+        &lt;li&gt;Multi Dimensional charts for data visualization.&lt;/li&gt;
+        &lt;li&gt;Improvement on searches and menu usability.&lt;/li&gt;
+        &lt;li&gt;Migration to the current version of rails, improvements on syntax and performance.&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=row&gt;&lt;div class=col-xs-12&gt;IJAS&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=row&gt;
+    &lt;div class=col-xs-12&gt;
+      &lt;ul&gt;
+        &lt;li&gt;Stabilization of Rails 4 application and Android mobile application.&lt;/li&gt;
+        &lt;li&gt;Automation of Windows rails services restart.&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=row&gt;&lt;div class=col-xs-12&gt;Misc&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=row&gt;
+    &lt;div class=col-xs-12&gt;
+      &lt;ul&gt;
+        &lt;li&gt;Reverse engineered an algorithm to decode ID of RFID cards.&lt;/li&gt;
+        &lt;li&gt;Full Stack implementation of multiple image downloader.&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;br /&gt;
+  &lt;div class=row&gt;
+    &lt;div class=&#34;col-xs-5&#34;&gt;&lt;strong&gt;Software Engineer&lt;/strong&gt;&lt;/div&gt;
+    &lt;div class=&#34;col-xs-3&#34;&gt;&lt;p class=&#34;text-center&#34;&gt;&lt;strong&gt;CUCSUR&lt;/strong&gt;&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&#34;col-xs-4&#34;&gt;
+      &lt;div class=&#34;row text-right&#34;&gt;&lt;strong&gt;July 2014 - May 2015&lt;/strong&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=row&gt;&lt;div class=col-xs-12&gt;S.I.A. Sistema Integral de Asistencias&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=row&gt;
+    &lt;div class=col-xs-12&gt;
+      &lt;ul&gt;
+        &lt;li&gt;Full design and implementation of a Java application for the assistance of teachers.&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;br /&gt;
+  &lt;div class=row&gt;
+    &lt;div class=&#34;col-xs-5&#34;&gt;&lt;strong&gt;Software Engineer/Sysadmin&lt;/strong&gt;&lt;/div&gt;
+    &lt;div class=&#34;col-xs-3&#34;&gt;&lt;p class=&#34;text-center&#34;&gt;&lt;strong&gt;X Servers&lt;/strong&gt;&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&#34;col-xs-4&#34;&gt;
+      &lt;div class=&#34;row text-right&#34;&gt;&lt;strong&gt; 2006 - 2014&lt;/strong&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=row&gt;&lt;div class=col-xs-12&gt;Linux Server Administrator&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=row&gt;
+    &lt;div class=col-xs-12&gt;
+      &lt;ul&gt;
+        &lt;li&gt;Server initial setup, firewall setup with APF.&lt;/li&gt;
+        &lt;li&gt;Setup and debugging logs for web and mail servers.&lt;/li&gt;
+        &lt;li&gt;Automation of tasks.&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=row&gt;&lt;div class=col-xs-12&gt;Server Admin Linux - Gaming&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=row&gt;
+    &lt;div class=col-xs-12&gt;
+      &lt;ul&gt;
+        &lt;li&gt;Provide the best gaming experience by monitoring and fixing issues with latency.&lt;/li&gt;
+        &lt;li&gt;DDOS UDP attack mitigation.&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;br /&gt;
+  &lt;div class=row&gt;
+    &lt;h4&gt;Education&lt;/h4&gt;
+    &lt;hr /&gt;
+  &lt;/div&gt;
+  &lt;div class=row&gt;
+    &lt;div class=&#34;col-xs-4&#34;&gt;&lt;strong&gt;Mechatronics Engineering&lt;/strong&gt;&lt;/div&gt;
+    &lt;div class=&#34;col-xs-5&#34;&gt;&lt;p class=&#34;text-center&#34;&gt;&lt;strong&gt;Universidad de Guadalajara&lt;/strong&gt;&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&#34;col-xs-3&#34;&gt;
+      &lt;div class=&#34;row text-right&#34;&gt;&lt;strong&gt;July 2011 - 2015&lt;/strong&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=row&gt;
+    &lt;div class=col-xs-12&gt;
+      &lt;ul&gt;
+        &lt;li&gt;BSc. Mechatronics Engineering Degree. Score: 98.84 / 100.&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=row&gt;&lt;div class=col-xs-12&gt;Final Project - Solar Tree&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=row&gt;
+    &lt;div class=col-xs-12&gt;
+      &lt;ul&gt;
+        &lt;li&gt;Leader of work group, research, programming and electronic/electric design.&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=row&gt;
+    &lt;h4&gt;Technical Experience&lt;/h4&gt;
+    &lt;hr /&gt;
+  &lt;/div&gt;
+  &lt;div class=row&gt;&lt;div class=col-xs-12&gt;Projects&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=row&gt;
+    &lt;div class=col-xs-12&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;strong&gt;System to build habits&lt;/strong&gt;. Python Django MVC, Jquery, HTML, CSS3.&lt;/li&gt;
+        &lt;li&gt;&lt;strong&gt;2D Platformer for Android&lt;/strong&gt; Teeport 2D game written in Java for Android.&lt;/li&gt;
+        &lt;li&gt;&lt;strong&gt;Inventories system for a Store&lt;/strong&gt;. PHP, Mysql.&lt;/li&gt;
+        &lt;li&gt;&lt;strong&gt;Collaboration in an open source Video Game&lt;/strong&gt;. C, MySQL, PHP.&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=row&gt;&lt;div class=col-xs-12&gt;Languages and Technologies&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=row&gt;
+    &lt;div class=col-xs-12&gt;
+      &lt;ul&gt;
+        &lt;li&gt;
+          Programming Languages: Ruby; Python; Java; PHP; C; Javascript; HTML; CSS.
+        &lt;/li&gt;
+        &lt;li&gt;
+          Frameworks: Ruby on Rails; Ionic; Django; Bootstrap; Ember.js.
+        &lt;/li&gt;
+        &lt;li&gt;
+          Tools: Linux Debian, Gentoo; Mac OS X; Windows; Android Studio; Netbeans; Eclipse.
+        &lt;/li&gt;
+        &lt;li&gt;
+          Power user of vim, tmux, Linux, ssh, git.
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=row&gt;&lt;div class=col-xs-12&gt;Languages&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=row&gt;
+    &lt;div class=col-xs-12&gt;
+      &lt;ul&gt;
+        &lt;li&gt;
+          English: Reading: 98%, Writing: 85%, Speaking: 85%, Listening: 95%; Business Level English.
+        &lt;/li&gt;
+        &lt;li&gt;
+          Spanish: Mother Tongue.
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;!--
+  vim: filetype=html
+--&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

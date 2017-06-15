@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <title>Alarma simple con linux.</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/tether.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-faded">
+      <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header">
+        &#9776;
+      </button>
+      <div class="collapse navbar-toggleable-xs" id="navbar-header">
+        <a class="navbar-brand navbar-invenrt" href="http://diegomichel.org/">
+          <i class="fa fa-home fa-2x"></i>
+        </a>
+        <div class="form-inline pull-xs-right">
+          <a class="btn btn-default" href="http://github.com/diegomichel">
+            <i class="fa fa-github fa-2x"></i>
+          </a>
+        </div>
+      </div>
+    </nav> 
+    <div class="container">
+    
+<h1>Alarma simple con linux.</h1>
+    <h2>Mon, Feb8, 2010</h2>
+    <p>Crear alarmas en linux es bastante facil. <strong>1.- Instalar Software.</strong> Ubuntu/Debian</p>
+
+<blockquote>
+<p>sudo aptitude install libnotify <strong>2.- Creando la alarma propiamente dicho.</strong>** Ejemplo: Agua para el cafe. <strong>&gt; sleep 10m &amp;&amp; notify-send &ldquo;El agua del cafe esta lista.&rdquo; &amp;simplemente escribe esa linea en alguna consola/terminal, o presiona Alt-F2 en el caso de Ubuntu y escribe ese comando, presiona enter, al parecer nada cambio, pero si esperas 5 minutos se mostrara un mensaje en tu pantalla con el texto el agua esta lista.</strong> Explicacin:**El comando sleep acepta como parametros s,h,d,m, para segundos, horas, dias, meses, por ejemplo para 1 segundo seria sleep 1s, lo que hace el comando sleep es solamente no hacer nada por el tiempo que se le especifique. Luego tenemos los simbolos &amp;&amp; que significan que se espere a que termine el comando anterior en este caso sleep 10m a que finalice. El comando notify-send es el que nos muestra el mensaje en la pantalla, por ejemplo notify-send &ldquo;hola&rdquo;, mostrara un hola en tu pantalla checa el screen shot.<center>
+<a href="http://Pictat.com/show.php?i=/2010/2/7/257652010020713.png" target="_blank"><img src="http://Pictat.com/t/2010/2/7/257652010020713.png" border="0" alt="Free Image Hosting at www.Pictat.com"></a> </center>Todos los comandos se pueden usar por separado o combinarlos.</p>
+</blockquote>
+
+    <div>
+      
+        <a class='previous' href='http://diegomichel.org/old_blog_posts/123-zomg-tema-para-wordpress/'> Zomg tema para wordpress</a>
+      |
+      
+      
+        <a class='previous' href='http://diegomichel.org/old_blog_posts/121-cambio-de-ratpoison-a-fluxbox/'> Cambio de Ratpoison a fluxbox.</a>
+      
+    </div>
+    <p><a href="http://diegomichel.org/">Home</a></p>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="/js/tether.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+</body>
+</html>
+

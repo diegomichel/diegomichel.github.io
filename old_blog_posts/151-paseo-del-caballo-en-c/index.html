@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <title>Paseo del caballo en C&#43;&#43;</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/tether.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-faded">
+      <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header">
+        &#9776;
+      </button>
+      <div class="collapse navbar-toggleable-xs" id="navbar-header">
+        <a class="navbar-brand navbar-invenrt" href="http://diegomichel.org/">
+          <i class="fa fa-home fa-2x"></i>
+        </a>
+        <div class="form-inline pull-xs-right">
+          <a class="btn btn-default" href="http://github.com/diegomichel">
+            <i class="fa fa-github fa-2x"></i>
+          </a>
+        </div>
+      </div>
+    </nav> 
+    <div class="container">
+    
+<h1>Paseo del caballo en C&#43;&#43;</h1>
+    <h2>Sat, May15, 2010</h2>
+    <p>Usando Heurstica, Ejercicio del libro Como Programar C++ 6ed de Deitel. [c]#include <iostream> using std::cout; using std::endl; int siguientepaso(const int&amp;,const int&amp;, int[][8]); int main(int argc, char** argv) { int tablero[8][8]={0}; //Posicion actual del caballo int filaActual = 0; int columnaActual = 0; //Movimientos posibles del caballo int horizontal[8]={2,1,-1,-2,-2,-1,1,2}; int vertical[8]={-1,-2,-2,-1,1,2,2,1}; int siguientemovimiento; //Moviendo el caballo for(int i=1;i&lt;=64;i++) { //Marcando la casilla en la que estamos tablero[filaActual][columnaActual] = i; siguientemovimiento = siguientepaso(filaActual,columnaActual,tablero); if(siguientemovimiento != -1) { filaActual += vertical[siguientemovimiento]; columnaActual += horizontal[siguientemovimiento]; } //Ya no existe movimiento posible if(tablero[filaActual][columnaActual] &gt; 0) { cout &lt;&lt; &ldquo;Movimientos realizados: &ldquo;&lt;&lt; i&lt;&lt; endl; for(int fila=0;fila<8;fila++) { for(int col=0;col<8;col++) { cout << ""<< tablero[fila][col]<< "t"; } cout << "nnn"; } break; } } return 0; } //Seleccionar el siguiente paso a hacer int siguientepaso(const int &fila,const int &columna,int tablero[][8]) { int accesibilidad[8][8]={ {2,3,4,4,4,4,3,2}, {3,4,6,6,6,6,4,3}, {4,6,8,8,8,8,6,4}, {4,6,8,8,8,8,6,4}, {4,6,8,8,8,8,6,4}, {4,6,8,8,8,8,6,4}, {3,4,6,6,6,6,4,3}, {2,3,4,4,4,4,3,2} }; //Movimientos posibles del caballo int horizontal[8]={2,1,-1,-2,-2,-1,1,2}; int vertical[8]={-1,-2,-2,-1,1,2,2,1}; int bestmove = -1; for(int movimiento=0;movimiento<8;movimiento++) { if((fila + vertical[movimiento]) > 7 || (fila + vertical[movimiento]) &lt; 0) continue; if((columna + horizontal[movimiento]) &gt; 7 || (columna + horizontal[movimiento]) &lt; 0) continue; if(tablero[fila + vertical[movimiento]][columna + horizontal[movimiento]] &gt; 0) continue; if(bestmove==-1) { bestmove = movimiento; continue; } if(accesibilidad[fila + vertical[bestmove]][columna + horizontal[bestmove]] &gt; accesibilidad[fila + vertical[movimiento]][columna + horizontal[movimiento]]) { bestmove = movimiento; } } return bestmove; }[/c] <a href="http://sharetxt.com/?s=9SkBDd0q">Paseo del caballo en c++</a></p>
+
+    <div>
+      
+        <a class='previous' href='http://diegomichel.org/old_blog_posts/152-disponible-la-version-3-de-wordpress/'> Disponible la version 3 de wordpress.</a>
+      |
+      
+      
+        <a class='previous' href='http://diegomichel.org/old_blog_posts/150-ventajas-y-desventajas-de-usar-linux/'> Ventajas y desventajas de usar linux.</a>
+      
+    </div>
+    <p><a href="http://diegomichel.org/">Home</a></p>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="/js/tether.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+</body>
+</html>
+

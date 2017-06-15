@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <title>Optimizar tablas mysql.</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/tether.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-faded">
+      <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header">
+        &#9776;
+      </button>
+      <div class="collapse navbar-toggleable-xs" id="navbar-header">
+        <a class="navbar-brand navbar-invenrt" href="http://diegomichel.org/">
+          <i class="fa fa-home fa-2x"></i>
+        </a>
+        <div class="form-inline pull-xs-right">
+          <a class="btn btn-default" href="http://github.com/diegomichel">
+            <i class="fa fa-github fa-2x"></i>
+          </a>
+        </div>
+      </div>
+    </nav> 
+    <div class="container">
+    
+<h1>Optimizar tablas mysql.</h1>
+    <h2>Tue, Apr6, 2010</h2>
+    <p>Bueno con el post anterior acerca de <a href="http://diegomichel.org/2010/04/04/optimizar-mysql/">optimizar mysql</a> con <a href="http://diegomichel.org/2010/04/04/optimizar-mysql/">Mysql Tuner</a>, me encontr con el problema de que tengo muchas bases de datos con muchas tablas asi que me tuve que crear un script para realizar la tarea.</p>
+
+<blockquote>
+<p>DBS=&ldquo;$(mysql -pMYSQLPASSWORD -Bse &lsquo;show databases&rsquo;)&rdquo; for db in $DBS do echo $db TABLES=&ldquo;$(mysql -pMYSQLPASSWORD &ndash;database=$db -Bse &lsquo;show tables&rsquo;)&rdquo; for table in $TABLES do echo &ldquo;Optimizing Table $table&rdquo; mysql -pMYSQLPASSWORD &ndash;database=$db -Bse &ldquo;OPTIMIZE TABLE $table&rdquo; done doneBasicamente el script lo que hace es tomar la lista de base de datos, luego con esa lista ir pasando en cada una y obtener las tablas, y ya con eso puedes ejecutar OPTIMIZE TABLE. Si deseas utilizar este script cambia MYSQLPASSWORD por tu password de mysql, y copia el contenido en un archivo ponle un nombre por ejemplo optimiza.sh, y para ejecutarlo utiliza la siguiente linea:&gt; sh optimiza.sh</p>
+</blockquote>
+
+    <div>
+      
+        <a class='previous' href='http://diegomichel.org/old_blog_posts/142-reinstalar-archivos-de-configuracion-de-debian/'> Reinstalar archivos de configuracion de debian.</a>
+      |
+      
+      
+        <a class='previous' href='http://diegomichel.org/old_blog_posts/138-optimizar-mysql/'> Optimizar MYSQL.</a>
+      
+    </div>
+    <p><a href="http://diegomichel.org/">Home</a></p>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="/js/tether.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+</body>
+</html>
+

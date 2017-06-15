@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <title>Spam y directorio.</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/tether.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-faded">
+      <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header">
+        &#9776;
+      </button>
+      <div class="collapse navbar-toggleable-xs" id="navbar-header">
+        <a class="navbar-brand navbar-invenrt" href="http://diegomichel.org/">
+          <i class="fa fa-home fa-2x"></i>
+        </a>
+        <div class="form-inline pull-xs-right">
+          <a class="btn btn-default" href="http://github.com/diegomichel">
+            <i class="fa fa-github fa-2x"></i>
+          </a>
+        </div>
+      </div>
+    </nav> 
+    <div class="container">
+    
+<h1>Spam y directorio.</h1>
+    <h2>Sun, Jan17, 2010</h2>
+    <p>Wow, acabo de validar 300 paginas web en el <a href="http://directorioweb.me">directorio web</a> que tengo. Estas son mis impresiones: 10% Paginas de alta calidad 40% Paginas de media calidad 20% Paginas de calidad baja 30% Spam vil y malo. De ese 30% de spam mucho venia de un tal anselmo.chambers ya le he baneado todos los dominios en caso de que trate de hacer spam otra vez jojojo, ya que el muy inteligente uso ip diferentes para cada envi lololol el tip de desconectar y reconectar el mdem, pero no contaba que en el whois todos sus dominios compartian el mismo email, DNS, probablemente la misma ip pero no cheque, etc. As que cree un script php para desahecerme de el :&gt;.</p>
+
+<blockquote>
+<p>&lt;? $host=&ldquo;localhost&rdquo;; $database=&ldquo;removed&rdquo;; $dbusername=&ldquo;removed&rdquo;; $dbpassword=&ldquo;removed&rdquo;; function conectar() { global $host, $database, $dbusername, $dbpassword; $link = mysql_connect(&ldquo;$host&rdquo;, &ldquo;$dbusername&rdquo;, &ldquo;$dbpassword&rdquo;); if (!$link) { /*die(&lsquo;Could not connect: &lsquo; . mysql_error());*/ echo &ldquo;<center><h1>Configure el acceso a base de datos.</h1></center>&rdquo;; } mysql_select_db(&ldquo;$database&rdquo;); } function getDomain($url) { if(filter_var($url, FILTER_VALIDATE_URL, FILTER_FLAG_HOST_REQUIRED) === FALSE) { return false; } $parts = parse_url($url); /*** return the host domain ***/ return $parts[&lsquo;host&rsquo;]; } function cleandomain($url) { while(substr_count($url,&ldquo;.&rdquo;) &gt; 1) { if(substr_count($url,&ldquo;.&rdquo;) == 2) { //Esto es para los subdominios $point2 = stripos($url,&ldquo;.&rdquo;); $tempurl = substr($url,$point2+1); //tempurl tendra la forma xxx.xxx $point2 = stripos($tempurl,&ldquo;.&rdquo;); if($point2 &lt; 4) { return $url; break; } } $point = stripos($url,&ldquo;.&rdquo;); $url = substr($url,$point+1); } return $url; } conectar(); $query = &ldquo;SELECT id, url FROM paginas WHERE validada = 0&rdquo;; $result = mysql_query($query); while($row = mysql_fetch_row($result)) { $output=&ldquo;&rdquo;; $domain = getDomain($row[1]); $domain = cleandomain($domain); exec(&ldquo;whois $domain&rdquo;, &amp;$output); $texto = implode(&ldquo;n&rdquo;, $output); if(stripos($texto,&ldquo;anselmo.chambers&rdquo;) !== FALSE || stripos($texto,&ldquo;NS02.ONEWORLDOFFICE.NET&rdquo;) !== FALSE) { echo &ldquo;!!! &ldquo;; $query = &ldquo;UPDATE paginas SET baneada=&lsquo;1&rsquo; WHERE id = &lsquo;$row[0]&lsquo;&ldquo;; mysql_query($query); } sleep(3); echo $domain. &ldquo;n&rdquo;; } ?&gt;Esto lo ejecuto desde la consola del servidor, un script como este de cara al publico es un gran problema de seguridad. En fin si quieren ganar visitas no olviden enviar su pagina web a mi <a href="http://directorioweb.me">directorio web</a>. Tambin estoy creando una lista de directorios que no piden reciproco obligatorio, una vez la tenga completa se las pongo por aqui para que ustedes enven sus paginas tambien.</p>
+</blockquote>
+
+    <div>
+      
+        <a class='previous' href='http://diegomichel.org/old_blog_posts/117-vim-frames/'> Vim frames.</a>
+      |
+      
+      
+        <a class='previous' href='http://diegomichel.org/old_blog_posts/115-pictat/'> Pictat</a>
+      
+    </div>
+    <p><a href="http://diegomichel.org/">Home</a></p>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="/js/tether.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+</body>
+</html>
+

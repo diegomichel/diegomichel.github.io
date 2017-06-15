@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <title>Convertir between screen to world and coordinates libgdx</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/tether.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-faded">
+      <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header">
+        &#9776;
+      </button>
+      <div class="collapse navbar-toggleable-xs" id="navbar-header">
+        <a class="navbar-brand navbar-invenrt" href="http://diegomichel.org/">
+          <i class="fa fa-home fa-2x"></i>
+        </a>
+        <div class="form-inline pull-xs-right">
+          <a class="btn btn-default" href="http://github.com/diegomichel">
+            <i class="fa fa-github fa-2x"></i>
+          </a>
+        </div>
+      </div>
+    </nav> 
+    <div class="container">
+    
+<h1>Convertir between screen to world and coordinates libgdx</h1>
+    <h2>Wed, Jan30, 2013</h2>
+    <blockquote>
+<p>Vector3 mouseCoordinates = new Vector3(screenX,screenY,0); Teeport.camera.unproject(mouseCoordinates); Vector2 playerPosition = Teeport.player.body.getPosition(); Utils.vectorInWorldCoordinates(playerPosition);Just in case i need it again later. &nbsp; Mouse(camera) to world coordinates
+1. Unproject mouse coordinates
+2. Convert your object position from box2d to world coordinates and thats it :)</p>
+</blockquote>
+
+    <div>
+      
+        <a class='previous' href='http://diegomichel.org/old_blog_posts/1-my-next-gamehabit-project/'> My next game-habit project</a>
+      |
+      
+      
+        <a class='previous' href='http://diegomichel.org/old_blog_posts/172-my-battlestation/'> My BattleStation!</a>
+      
+    </div>
+    <p><a href="http://diegomichel.org/">Home</a></p>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="/js/tether.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+</body>
+</html>
+

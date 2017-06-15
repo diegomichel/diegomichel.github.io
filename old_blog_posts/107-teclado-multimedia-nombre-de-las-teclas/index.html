@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <title>Teclado multimedia nombre de las teclas.</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/tether.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-faded">
+      <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header">
+        &#9776;
+      </button>
+      <div class="collapse navbar-toggleable-xs" id="navbar-header">
+        <a class="navbar-brand navbar-invenrt" href="http://diegomichel.org/">
+          <i class="fa fa-home fa-2x"></i>
+        </a>
+        <div class="form-inline pull-xs-right">
+          <a class="btn btn-default" href="http://github.com/diegomichel">
+            <i class="fa fa-github fa-2x"></i>
+          </a>
+        </div>
+      </div>
+    </nav> 
+    <div class="container">
+    
+<h1>Teclado multimedia nombre de las teclas.</h1>
+    <h2>Wed, Jul8, 2009</h2>
+    <p>Bueno acabo de cambiar mi Window Manager a ion3, y quiero utlizar las teclas de mi teclado para controlar el reproductor de musica, en este caso mocp. El comando para hacer debug a los eventos del teclado es:</p>
+
+<blockquote>
+<p>xevlo ejecutas, presiona la tecla la cual necesitas hacer bind y te apareceran algunos datos:&gt; KeyPress event, serial 33, synthetic NO, window 0x2400001, root 0x13c, subw 0x0, time 338343028, (85,-9), root:(1180,229), state 0x10, keycode 171 (keysym 0x1008ff17, XF86AudioNext), same_screen YES, XLookupString gives 0 bytes: XmbLookupString gives 0 bytes: XFilterEvent returns: FalseLa parte que nos interesa es:&gt; keycode 171 (keysym 0x1008ff17, XF86AudioNext)en mi caso yo uso ion asi que agregado la linea:&gt; kpress(&ldquo;XF86AudioNext&rdquo;, &ldquo;ioncore.exec_on(_, &lsquo;mocp &ndash;next&rsquo;)&ldquo;),en el archivo cfg_ioncore.lua, en la seccion adecuada y reinicion ion3, y listo. Keywords: ion3, linux, teclado, teclado multimedia, bind keys, keyboard binds, binding keys, bind keys, bind teclado, crear binds.</p>
+</blockquote>
+
+    <div>
+      
+        <a class='previous' href='http://diegomichel.org/old_blog_posts/108-libro-de-blender-en-espanol/'> Libro de Blender en Espanol</a>
+      |
+      
+      
+        <a class='previous' href='http://diegomichel.org/old_blog_posts/87-como-activar-windows-7/'> Como activar Windows 7</a>
+      
+    </div>
+    <p><a href="http://diegomichel.org/">Home</a></p>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="/js/tether.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+</body>
+</html>
+

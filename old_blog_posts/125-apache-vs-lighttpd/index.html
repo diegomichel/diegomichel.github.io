@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <title>Apache vs Lighttpd</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/tether.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-faded">
+      <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header">
+        &#9776;
+      </button>
+      <div class="collapse navbar-toggleable-xs" id="navbar-header">
+        <a class="navbar-brand navbar-invenrt" href="http://diegomichel.org/">
+          <i class="fa fa-home fa-2x"></i>
+        </a>
+        <div class="form-inline pull-xs-right">
+          <a class="btn btn-default" href="http://github.com/diegomichel">
+            <i class="fa fa-github fa-2x"></i>
+          </a>
+        </div>
+      </div>
+    </nav> 
+    <div class="container">
+    
+<h1>Apache vs Lighttpd</h1>
+    <h2>Tue, Mar9, 2010</h2>
+    <blockquote>
+<p>Server Software: lighttpd/1.4.26 Server Hostname: localhost Server Port: 80 Document Path: /index.php Document Length: 46193 bytes Concurrency Level: 200 Time taken for tests: 13.733 seconds Complete requests: 30000 Failed requests: 0 Write errors: 0 Total transferred: 1390897193 bytes HTML transferred: 1385790000 bytes Requests per second: 2184.55 <a href="mean">#/sec</a> Time per request: 91.552 <a href="mean">ms</a> Time per request: 0.458 <a href="mean, across all concurrent requests">ms</a> Transfer rate: 98909.05 [Kbytes/sec] received Connection Times (ms) min mean[+/-sd] median max Connect: 0 0 0.3 0 7 Processing: 62 91 11.8 90 225 Waiting: 61 91 11.9 89 225 Total: 62 91 12.0 90 226 Percentage of the requests served within a certain time (ms) 50% 90 66% 95 75% 97 80% 98 90% 104 95% 109 98% 112 99% 116 100% 226 (longest request)&gt; Server Software: Apache/2.2.14 Server Hostname: localhost Server Port: 80 Document Path: /index.php Document Length: 45285 bytes Concurrency Level: 200 Time taken for tests: 15.826 seconds Complete requests: 30000 Failed requests: 0 Write errors: 0 Total transferred: 1365745513 bytes HTML transferred: 1360272955 bytes Requests per second: 1895.59 <a href="mean">#/sec</a> Time per request: 105.508 <a href="mean">ms</a> Time per request: 0.528 <a href="mean, across all concurrent requests">ms</a> Transfer rate: 84274.02 [Kbytes/sec] received Connection Times (ms) min mean[+/-sd] median max Connect: 0 19 110.5 18 9030 Processing: 41 86 274.2 66 6431 Waiting: 2 60 274.5 54 6420 Total: 46 105 295.2 97 9112 Percentage of the requests served within a certain time (ms) 50% 97 66% 107 75% 111 80% 113 90% 121 95% 129 98% 167 99% 188 100% 9112 (longest request)&gt; uname -a Linux desktop 2.6.32-trunk-amd64 #1 SMP Sun Jan 10 22:40:40 UTC 2010 x86_64 GNU/Linux root@desktop:~# cat /proc/cpuinfo processor : 0 vendor_id : AuthenticAMD cpu family : 16 model : 4 model name : AMD Phenom&trade; II X2 550 Processor stepping : 2 cpu MHz : 3114.718 cache size : 512 KB physical id : 0 siblings : 2 core id : 0 cpu cores : 2 apicid : 0 initial apicid : 0 fpu : yes fpu_exception : yes cpuid level : 5 wp : yes flags : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm 3dnowext 3dnow constant_tsc rep_good nonstop_tsc extd_apicid pni monitor cx16 popcnt lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt bogomips : 6229.42 TLB size : 1024 4K pages clflush size : 64 cache_alignment : 64 address sizes : 48 bits physical, 48 bits virtual power management: ts ttp tm stc 100mhzsteps hwpstate processor : 1 vendor_id : AuthenticAMD cpu family : 16 model : 4 model name : AMD Phenom&trade; II X2 550 Processor stepping : 2 cpu MHz : 3114.718 cache size : 512 KB physical id : 0 siblings : 2 core id : 1 cpu cores : 2 apicid : 1 initial apicid : 1 fpu : yes fpu_exception : yes cpuid level : 5 wp : yes flags : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm 3dnowext 3dnow constant_tsc rep_good nonstop_tsc extd_apicid pni monitor cx16 popcnt lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt bogomips : 6228.56 TLB size : 1024 4K pages clflush size : 64 cache_alignment : 64 address sizes : 48 bits physical, 48 bits virtual power management: ts ttp tm stc 100mhzsteps hwpstate root@desktop:~# free total used free shared buffers cached Mem: 3094440 543908 2550532 0 30068 198456 -/+ buffers/cache: 315384 2779056 Swap: 1871532 0 1871532 root@desktop:~#Como hice las pruebas: 1.- Reinicie la maquina. 2.- Inicie apache 3.- Corri el test y guarde los resultados. 4.- Reinicie la maquina 5.- Inicie lighttpd 6.- Corri el test y guarde los resultados. el archivo index.php solo ejecuta la funcion phpinfo(); Conclusion: Lighttpd es mas rapido que apache incluso sirviendo PHP.</p>
+</blockquote>
+
+    <div>
+      
+        <a class='previous' href='http://diegomichel.org/old_blog_posts/132-teclas-cursor-no-funcionan-en-vim-como-arreglar/'> Teclas cursor no funcionan en vim como arreglar.</a>
+      |
+      
+      
+        <a class='previous' href='http://diegomichel.org/old_blog_posts/127-vlc-como-root/'> VLC como root.</a>
+      
+    </div>
+    <p><a href="http://diegomichel.org/">Home</a></p>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="/js/tether.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+</body>
+</html>
+

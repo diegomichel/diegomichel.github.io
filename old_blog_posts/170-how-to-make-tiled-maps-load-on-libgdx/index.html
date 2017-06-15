@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <title>How to make Tiled maps load on libgdx.</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/tether.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-faded">
+      <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header">
+        &#9776;
+      </button>
+      <div class="collapse navbar-toggleable-xs" id="navbar-header">
+        <a class="navbar-brand navbar-invenrt" href="http://diegomichel.org/">
+          <i class="fa fa-home fa-2x"></i>
+        </a>
+        <div class="form-inline pull-xs-right">
+          <a class="btn btn-default" href="http://github.com/diegomichel">
+            <i class="fa fa-github fa-2x"></i>
+          </a>
+        </div>
+      </div>
+    </nav> 
+    <div class="container">
+    
+<h1>How to make Tiled maps load on libgdx.</h1>
+    <h2>Mon, Jan28, 2013</h2>
+    <p>1.- Download libgdx libs, and put them in for example c:gdxnew 2.- Create your map with tiled and put in a directory example c:mymap 3.- Create an output directory example: c:libgdxmap 4.- open cmd(command line) and execute &nbsp;</p>
+
+<blockquote>
+<p>java -cp C:gdxnewgdx.jar;C:gdxnewextensionsgdx-toolsgdx-tools.jar;C:gdxnewextensionsgdx-tiled-preprocessorgdx-tiled-preprocessor.jar com.badlogic.gdx.tiledmappacker.TiledMapPacker c:mymap c:libgdxmapNow you can use the files on c:libgdxmap on your libgdx project :) &nbsp; I was using just the texture packer to generate the the atlas for the map, but you actually need to use the <strong>TiledMapPacker</strong> to make it work, or it will not render/draw your tiled map on <strong>libgdx</strong>.</p>
+</blockquote>
+
+    <div>
+      
+        <a class='previous' href='http://diegomichel.org/old_blog_posts/173-today-i-coded/'> Today i coded...</a>
+      |
+      
+      
+        <a class='previous' href='http://diegomichel.org/old_blog_posts/169-dibujar-linea-en-libgdx/'> Dibujar linea en libgdx</a>
+      
+    </div>
+    <p><a href="http://diegomichel.org/">Home</a></p>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="/js/tether.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+</body>
+</html>
+

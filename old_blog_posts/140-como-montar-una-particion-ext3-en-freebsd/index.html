@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <title>Como montar una particion ext3 en freebsd.</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/tether.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-faded">
+      <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header">
+        &#9776;
+      </button>
+      <div class="collapse navbar-toggleable-xs" id="navbar-header">
+        <a class="navbar-brand navbar-invenrt" href="http://diegomichel.org/">
+          <i class="fa fa-home fa-2x"></i>
+        </a>
+        <div class="form-inline pull-xs-right">
+          <a class="btn btn-default" href="http://github.com/diegomichel">
+            <i class="fa fa-github fa-2x"></i>
+          </a>
+        </div>
+      </div>
+    </nav> 
+    <div class="container">
+    
+<h1>Como montar una particion ext3 en freebsd.</h1>
+    <h2>Thu, May6, 2010</h2>
+    <p>Lo primero que tenemos que hacer es identificar nuestros discos duros.</p>
+
+<blockquote>
+<p>localhost# dmesg|grep -i &ldquo;SATA&rdquo; atapci0: <ati ixp700 sata300 controller> port 0xff00-0xff07,0xfe00-0xfe03,0xfd00-0xfd07,0xfc00-0xfc03,0xfb00-0xfb0f mem 0xfe02f000-0xfe02f3ff irq 22 at device 17.0 on pci0
+ad4: 715404MB <seagate st3750330as sd04> at ata2-master SATA150
+ad6: 381554MB <seagate st3400832as> at ata3-master SATA150</seagate></seagate></ati>Una vez tenemos localizado el disco en mi caso es el ad4 donde tengo las particiones de linux, ahora tenemos que saber como las nombra freebsd, para ello ejectua:&gt; localhost# ls /dev/ad4* /dev/ad4 /dev/ad4s2 /dev/ad4s4 /dev/ad4s1 /dev/ad4s3 /dev/ad4s5en este caso los equivalentes para linux serian.&gt; /dev/ad4 -&gt; /dev/sda /dev/ad4s1 -&gt; /dev/sda1 &hellip; etc.Y para pontar la particion ad4s1 es:&gt; mount -t ext2fs /dev/ad4s1 /mnt/s1El directorio /mnt/s1 debe ser creado primero.</p>
+</blockquote>
+
+    <div>
+      
+        <a class='previous' href='http://diegomichel.org/old_blog_posts/149-por-que-uso-freebsd/'> Por que uso freebsd</a>
+      |
+      
+      
+        <a class='previous' href='http://diegomichel.org/old_blog_posts/148-freebsd-usrports-no-such-file-or-directory/'> Freebsd /usr/ports: No such file or directory.</a>
+      
+    </div>
+    <p><a href="http://diegomichel.org/">Home</a></p>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="/js/tether.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+</body>
+</html>
+

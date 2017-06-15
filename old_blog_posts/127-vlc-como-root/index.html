@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <title>VLC como root.</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/tether.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-faded">
+      <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header">
+        &#9776;
+      </button>
+      <div class="collapse navbar-toggleable-xs" id="navbar-header">
+        <a class="navbar-brand navbar-invenrt" href="http://diegomichel.org/">
+          <i class="fa fa-home fa-2x"></i>
+        </a>
+        <div class="form-inline pull-xs-right">
+          <a class="btn btn-default" href="http://github.com/diegomichel">
+            <i class="fa fa-github fa-2x"></i>
+          </a>
+        </div>
+      </div>
+    </nav> 
+    <div class="container">
+    
+<h1>VLC como root.</h1>
+    <h2>Tue, Mar9, 2010</h2>
+    <p>Vlc no se puede ejecutar como root en debian, gentoo y probablemente otras distribuciones. Aqui esta la solucion en el caso de debian. 1.- Obtener el codigo fuente.</p>
+
+<blockquote>
+<p>apt-get source vlc2.- Instalar dependencias para compilar&gt; apt-get build-dep vlc3.- Configurar&gt; ./configure &ndash;enable-run-as-root4.- Compilar e instalar&gt; ./compile &amp;&amp; make install</p>
+</blockquote>
+
+    <div>
+      
+        <a class='previous' href='http://diegomichel.org/old_blog_posts/125-apache-vs-lighttpd/'> Apache vs Lighttpd</a>
+      |
+      
+      
+        <a class='previous' href='http://diegomichel.org/old_blog_posts/126-rcconf--desactivar-servicios-debian/'> rcconf - desactivar servicios Debian.</a>
+      
+    </div>
+    <p><a href="http://diegomichel.org/">Home</a></p>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="/js/tether.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+</body>
+</html>
+
